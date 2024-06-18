@@ -1,0 +1,522 @@
+<!-- <!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New api</title>
+  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">NEWS</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">
+              <i class="ri-arrow-right-up-line"></i>
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#breaking-news" class="nav__link">
+              <i class="ri-arrow-right-up-line"></i>
+              <span>Breaking news</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#latest-stories-section" class="nav__link">
+              <i class="ri-arrow-right-up-line"></i>
+              <span>Latest stories</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#trending-posts-section" class="nav__link">
+              <i class="ri-arrow-right-up-line"></i>
+              <span>Trending posts</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-large-line"></i>
+        </div>
+
+        <div class="top-bar-right">
+          <ul class="menu">
+            <li><input type="search" placeholder="Search" /></li>
+            <li><button type="button" class="button">Search</button></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+  </header>
+
+  <br />
+
+  <div class="row banner" id="home">
+    <div class="medium-8 columns">
+      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shiprocket.in%2Fx%2F&psig=AOvVaw3npdj9nLhhzBMIbkgDAqHe&ust=1718528548988000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKD4qPKf3YYDFQAAAAAdAAAAABAS" target="_blank">
+        <img class="bannerImg roundedCorner" src="https://www.shiprocket.in/wp-content/uploads/2022/11/SRX-Blog-Bottom-banner-01-1-scaled-1-1024x460.jpg" />
+      </a>
+    </div>
+    <div class="medium-4 columns">
+      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shiprocket.in%2Fx%2F&psig=AOvVaw3npdj9nLhhzBMIbkgDAqHe&ust=1718528548988000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKD4qPKf3YYDFQAAAAAdAAAAABAS" target="_blank">
+        <img class="bannerImg roundedCorner" src="https://www.fairobserver.com/wp-content/uploads/2024/06/dollar-1.webp" />
+      </a>
+      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shiprocket.in%2Fx%2F&psig=AOvVaw3npdj9nLhhzBMIbkgDAqHe&ust=1718528548988000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKD4qPKf3YYDFQAAAAAdAAAAABAS" target="_blank">
+        <img class="roundedCorner" src="https://www.fairobserver.com/wp-content/uploads/2024/06/Abdullah-1.webp" />
+      </a>
+    </div>
+  </div>
+
+  <hr />
+
+  <div id="breaking-news">
+    <h4 style="margin: 0; text-align: center">BREAKING NEWS</h4>
+  </div>
+
+  <hr />
+
+  <div class="row small-up-2 medium-up-3 large-up-5" id="news-articles"></div>
+
+  <hr />
+
+  <div id="latest-stories-section">
+    <h4 style="margin: 0; text-align: center">LATEST STORIES</h4>
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <div class="large-8 column" id="latest-stories">
+      <div class="pagination-container">
+        <button id="prev-page" disabled>Previous</button>
+        <div id="page-numbers" class="page-numbers"></div>
+        <button id="next-page">Next</button>
+      </div>
+    </div>
+
+    <div class="large-4 column" id="trending-posts-section">
+      <aside>
+        <div class="row small-up-3">
+          <div class="column text-center">
+            <i class="fa-brands fa-facebook"></i>
+            <h6>56,009</h6>
+            <p><small>FOLLOWERS</small></p>
+            <br />
+          </div>
+
+          <div class="column text-center">
+            <i class="fa-brands fa-twitter"></i>
+            <h6>76,905</h6>
+            <p><small>FOLLOWERS</small></p>
+            <br />
+          </div>
+
+          <div class="column text-center">
+            <i class="fa-brands fa-instagram"></i>
+            <h6>34,099</h6>
+            <p><small>FOLLOWERS</small></p>
+            <br />
+          </div>
+
+          <div class="column text-center">
+            <i class="fa-brands fa-tumblr"></i>
+            <h6>13,765</h6>
+            <p><small>FOLLOWERS</small></p>
+          </div>
+
+          <div class="column text-center">
+            <i class="fa-brands fa-pinterest"></i>
+            <h6>9,283</h6>
+            <p><small>FOLLOWERS</small></p>
+          </div>
+
+          <div class="column text-center">
+            <i class="fa-brands fa-youtube"></i>
+            <h6>99,000</h6>
+            <p><small>FOLLOWERS</small></p>
+          </div>
+        </div>
+
+        <br />
+
+        <br />
+
+        <div class="row column">
+          <p class="lead">TRENDING POSTS</p>
+          <div id="trending-posts"></div>
+          <button id="load-more" class="button">Load More</button>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>NEWS</h4>
+          <div class="social-links">
+            <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Useful Link</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#breaking-news">Breaking news</a></li>
+            <li><a href="#latest-stories-section">Latest stories</a></li>
+            <li><a href="#trending-posts-section">Trending posts</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Popular Topics</h4>
+          <ul>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">Social Media</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div style="background-color: rgba(201, 222, 255, 0.467); text-align: center; padding-bottom: 10px; padding-top: 10px;">
+    © ReadWrite. All Rights Reserved.
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+
+  <script src="newsArticles.js"></script>
+  <script src="latestStories.js"></script>
+  <script src="menu.js"></script>
+  <script src="trendingPosts.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('.nav__link');
+
+      for (const link of links) {
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        });
+      }
+    });
+  </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>New API</title>
+  <link rel="stylesheet" href="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css" />
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">NEWS</a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#home" class="nav__link">
+              <i class="ri-arrow-right-up-line"></i>
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#breaking-news" class="nav__link">
+              <i class="ri-arrow-right-up-line"></i>
+              <span>Breaking news</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#latest-stories-section" class="nav__link">
+              <i class="ri-arrow-right-up-line"></i>
+              <span>Latest stories</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a href="#trending-posts-section" class="nav__link">
+              <i class="ri-arrow-right-up-line"></i>
+              <span>Trending posts</span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="nav__close" id="nav-close">
+          <i class="ri-close-large-line"></i>
+        </div>
+      </div>
+
+      <div class="top-bar-right">
+        <ul class="menu">
+          <li><input type="search" id="search-input" placeholder="Search" /></li>
+          <li><button type="button" class="button" id="search-button">Search</button></li>
+        </ul>
+      </div>
+
+      <div class="nav__toggle" id="nav-toggle">
+        <i class="ri-menu-line"></i>
+      </div>
+    </nav>
+  </header>
+
+  <br />
+
+  <div class="row banner" id="home" data-section="home">
+    <div class="medium-8 columns">
+      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shiprocket.in%2Fx%2F&psig=AOvVaw3npdj9nLhhzBMIbkgDAqHe&ust=1718528548988000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKD4qPKf3YYDFQAAAAAdAAAAABAS" target="_blank">
+        <img class="bannerImg roundedCorner" src="https://www.shiprocket.in/wp-content/uploads/2022/11/SRX-Blog-Bottom-banner-01-1-scaled-1-1024x460.jpg" />
+      </a>
+    </div>
+    <div class="medium-4 columns">
+      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shiprocket.in%2Fx%2F&psig=AOvVaw3npdj9nLhhzBMIbkgDAqHe&ust=1718528548988000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKD4qPKf3YYDFQAAAAAdAAAAABAS" target="_blank">
+        <img class="bannerImg roundedCorner" src="https://www.fairobserver.com/wp-content/uploads/2024/06/dollar-1.webp" />
+      </a>
+      <a href="https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.shiprocket.in%2Fx%2F&psig=AOvVaw3npdj9nLhhzBMIbkgDAqHe&ust=1718528548988000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCKD4qPKf3YYDFQAAAAAdAAAAABAS" target="_blank">
+        <img class="roundedCorner" src="https://www.fairobserver.com/wp-content/uploads/2024/06/Abdullah-1.webp" />
+      </a>
+    </div>
+  </div>
+
+  <hr />
+
+  <div id="breaking-news" data-section="breaking news">
+    <h4 style="margin: 0; text-align: center">BREAKING NEWS</h4>
+  </div>
+
+  <hr />
+
+  <div class="row small-up-2 medium-up-3 large-up-5" id="news-articles"></div>
+
+  <hr />
+
+  <div id="latest-stories-section" data-section="latest stories">
+    <h4 style="margin: 0; text-align: center">LATEST STORIES</h4>
+  </div>
+
+  <hr />
+
+  <div class="row">
+    <div class="large-8 column" id="latest-stories">
+      <div class="pagination-container">
+        <button id="prev-page" disabled>Previous</button>
+        <div id="page-numbers" class="page-numbers"></div>
+        <button id="next-page">Next</button>
+      </div>
+    </div>
+
+    <div class="large-4 column" id="trending-posts-section" data-section="trending posts">
+      <aside>
+        <div class="row small-up-3">
+          <div class="column text-center">
+            <i class="fa-brands fa-facebook"></i>
+            <h6>56,009</h6>
+            <p><small>FOLLOWERS</small></p>
+            <br />
+          </div>
+
+          <div class="column text-center">
+            <i class="fa-brands fa-twitter"></i>
+            <h6>76,905</h6>
+            <p><small>FOLLOWERS</small></p>
+            <br />
+          </div>
+
+          <div class="column text-center">
+            <i class="fa-brands fa-instagram"></i>
+            <h6>34,099</h6>
+            <p><small>FOLLOWERS</small></p>
+            <br />
+          </div>
+
+          <div class="column text-center">
+            <i class="fa-brands fa-tumblr"></i>
+            <h6>13,765</h6>
+            <p><small>FOLLOWERS</small></p>
+          </div>
+
+          <div class="column text-center">
+            <i class="fa-brands fa-pinterest"></i>
+            <h6>9,283</h6>
+            <p><small>FOLLOWERS</small></p>
+          </div>
+
+          <div class="column text-center">
+            <i class="fa-brands fa-youtube"></i>
+            <h6>99,000</h6>
+            <p><small>FOLLOWERS</small></p>
+          </div>
+        </div>
+
+        <br />
+
+        <br />
+
+        <div class="row column">
+          <p class="lead">TRENDING POSTS</p>
+          <div id="trending-posts"></div>
+          <button id="load-more" class="button">Load More</button>
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+          <h4>NEWS</h4>
+          <div class="social-links">
+            <a href="#"> <i class="fa-brands fa-facebook"></i></a>
+            <a href="#"> <i class="fa-brands fa-twitter"></i></a>
+            <a href="#"> <i class="fa-brands fa-instagram"></i></a>
+            <a href="#"> <i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Useful Link</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#breaking-news">Breaking news</a></li>
+            <li><a href="#latest-stories-section">Latest stories</a></li>
+            <li><a href="#trending-posts-section">Trending posts</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Popular Topics</h4>
+          <ul>
+            <li><a href="#">Sports</a></li>
+            <li><a href="#">Technology</a></li>
+            <li><a href="#">Politics</a></li>
+            <li><a href="#">Social Media</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div style="background-color: rgba(201, 222, 255, 0.467); text-align: center; padding-bottom: 10px; padding-top: 10px;">
+    © ReadWrite. All Rights Reserved.
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://dhbhdrzi4tiry.cloudfront.net/cdn/sites/foundation.js"></script>
+  <script>
+    $(document).foundation();
+  </script>
+
+  <script src="newsArticles.js"></script>
+  <script src="latestStories.js"></script>
+  <script src="menu.js"></script>
+  <script src="trendingPosts.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const links = document.querySelectorAll('.nav__link');
+
+      for (const link of links) {
+        link.addEventListener('click', function (event) {
+          event.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop,
+              behavior: 'smooth'
+            });
+          }
+        });
+      }
+    });
+
+    // Adding event listener to the search input
+    document.getElementById('search-input').addEventListener('input', function () {
+      const query = this.value.toLowerCase();
+      const sections = document.querySelectorAll('[data-section]');
+
+      sections.forEach(section => {
+        if (section.getAttribute('data-section').toLowerCase().includes(query)) {
+          section.style.display = 'block';
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    });
+
+    document.getElementById('search-button').addEventListener('click', function () {
+      const query = document.getElementById('search-input').value.toLowerCase();
+      const sections = document.querySelectorAll('[data-section]');
+
+      sections.forEach(section => {
+        if (section.getAttribute('data-section').toLowerCase().includes(query)) {
+          section.style.display = 'block';
+          window.scrollTo({
+            top: section.offsetTop,
+            behavior: 'smooth'
+          });
+        } else {
+          section.style.display = 'none';
+        }
+      });
+    });
+  </script>
+</body>
+</html>
+
